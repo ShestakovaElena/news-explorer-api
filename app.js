@@ -14,7 +14,7 @@ const errorHandler = require('./middlewares/errorHandler');
 const whitelist = ['http://localhost:8080/', 'https://localhost:8080/', 'https://shestakovaelena.github.io/news-explorer-frontend/index.html', 'http://shestakovaelena.github.io/news-explorer-frontend/index.html'];
 
 const corsOptions = {
-  origin: ['http://localhost:8080', 'https://localhost:8080/', 'https://shestakovaelena.github.io/news-explorer-frontend/index.html', 'http://shestakovaelena.github.io/news-explorer-frontend/index.html'],
+  origin: ['http://localhost:8080', 'https://localhost:8080', 'https://shestakovaelena.github.io', 'http://shestakovaelena.github.io'],
   optionsSuccessStatus: 200,
   credentials: true,
 };
