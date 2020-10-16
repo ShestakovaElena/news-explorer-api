@@ -11,10 +11,10 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 const router = require('./routes/index');
 const errorHandler = require('./middlewares/errorHandler');
 
-const whitelist = ['http://localhost:8080/', 'https://localhost:8080/'];
+const whitelist = ['http://localhost:8080/', 'https://localhost:8080/', 'https://shestakovaelena.github.io/news-explorer-frontend/index.html', 'http://shestakovaelena.github.io/news-explorer-frontend/index.html'];
 
 const corsOptions = {
-  origin: ['http://localhost:8080', 'https://interesting-news.tk'],
+  origin: ['http://localhost:8080', 'https://localhost:8080/', 'https://shestakovaelena.github.io/news-explorer-frontend/index.html', 'http://shestakovaelena.github.io/news-explorer-frontend/index.html'],
   optionsSuccessStatus: 200,
   credentials: true,
 };
